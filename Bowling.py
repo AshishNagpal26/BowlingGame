@@ -31,11 +31,11 @@ class Bowling_Game():
         return score
 
     def _is_spare(self, roll_index):
-        """ This private function checks for spare
+        """ This function checks for spare
             :return boolean,  true if it's a spare else false"""
         return self.pins_dropped[roll_index] + self.pins_dropped[roll_index+1] == 10
 
     def _is_strike(self, roll_index):
-        """ This private function checks for strike
+        """ This function checks for strike
             :return boolean,  true if it's a strike else false"""
         return self.pins_dropped[roll_index] == 10
